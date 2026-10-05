@@ -131,9 +131,9 @@ function App() {
       ) : (
         <>
           <section className="hero-section">
-            <div className="hero-copy"><span className="eyebrow">YOUR MEDICINE SEARCH</span><h1>Find the medicine<br /><span>you’re looking for.</span></h1><p>Search by brand name to explore FDA-listed medicine products.</p></div>
+            {/* <div className="hero-copy"><span className="eyebrow">YOUR MEDICINE SEARCH</span><h1>Find the medicine<br /><span>you’re looking for.</span></h1><p>Search by brand name to explore FDA-listed medicine products.</p></div> */}
             <Search search={searchMedicines} loading={status === 'loading'} initialValue={query} />
-            <div className="search-hint"><span className="shield">✓</span> Search medicine brand names, such as Advil or Tylenol</div>
+            {/* <div className="search-hint"><span className="shield">✓</span> Search medicine brand names, such as Advil or Tylenol</div> */}
           </section>
           <section className="results-section" aria-live="polite">
             {status === 'loading' && <div className="state-panel"><span className="spinner" />Searching the FDA database…</div>}
